@@ -1,14 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>cssMemSlider</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-</body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="carousel">
+          <input
+            type="radio"
+            name="slide-control"
+            id="slide-control-1"
+            class="slide-control-1 slide-control"
+            checked
+          /><input
+            type="radio"
+            name="slide-control"
+            id="slide-control-2"
+            class="slide-control-2 slide-control"
+          /><input
+            type="radio"
+            name="slide-control"
+            id="slide-control-3"
+            class="slide-control-3 slide-control"
+          /><input
+            type="radio"
+            name="slide-control"
+            id="slide-control-4"
+            class="slide-control-4 slide-control"
+          />
+          <ul class="slide-titles">
+            <li class="slide-title">
+              <label for="slide-control-1">TEXT 1</label>
+            </li>
+            <li class="slide-title">
+              <label for="slide-control-2">TEXT 2</label>
+            </li>
+            <li class="slide-title">
+              <label for="slide-control-3">TEXT 3</label>
+            </li>
+            <li class="slide-title">
+              <label for="slide-control-4">TEXT 4</label>
+            </li>
+          </ul>
+          <ul class="slides">
+            <li class="slide slide1">
+              <img src="./assets/img/1.jpg" alt="slide 1" class="slide-image" />
+            </li>
+            <li class="slide slide2">
+              <img src="./assets/img/2.jpg" alt="slide 2" class="slide-image" />
+            </li>
+            <li class="slide slide3">
+              <img src="./assets/img/3.jpg" alt="slide 3" class="slide-image" />
+            </li>
+            <li class="slide slide4">
+              <img src="./assets/img/4.jpg" alt="slide 4" class="slide-image" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <span>2021</span>
+          <span>RSSchool</span>
+          <span>soofleshka</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,93 @@
+/* styles */
+body {
+  background-color: #333;
+}
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.main {
+  padding: 0.625rem;
+  height: calc(100vh - 3.75rem);
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+ul.slides {
+  order: 1;
+  margin-bottom: 20px;
+}
+.slide-titles {
+  order: 2;
+}
+
+.slide-control {
+  order: 3;
+  cursor: pointer;
+}
+
+.slides,
+.slide-titles {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides > *,
+.slide-titles > * {
+  flex: 0 0 auto;
+}
+
+.slide-image,
+.slide,
+.slide-title,
+.slide-title label {
+  width: 100%;
+  max-width: none;
+  max-height: 30rem;
+}
+
+ul.slide-titles {
+  width: 70%;
+  margin: 0 auto 0 0;
+}
+
+.slide,
+.slide-title {
+  transition: all 0.7s ease-in;
+}
+
+#slide-control-1:checked ~ .slides .slide,
+#slide-control-1:checked ~ .slide-titles .slide-title {
+  transform: translate(0);
+}
+
+#slide-control-2:checked ~ .slides .slide,
+#slide-control-2:checked ~ .slide-titles .slide-title {
+  transform: translatex(-100%);
+}
+
+#slide-control-3:checked ~ .slides .slide,
+#slide-control-3:checked ~ .slide-titles .slide-title {
+  transform: translatex(-200%);
+}
+#slide-control-4:checked ~ .slides .slide,
+#slide-control-4:checked ~ .slide-titles .slide-title {
+  transform: translatex(-300%);
+}
+
+.footer-content {
+  height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.15rem solid #ccc;
+}
