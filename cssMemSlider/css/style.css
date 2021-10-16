@@ -1,14 +1,20 @@
 /* styles */
 body {
   background-color: #333;
+  color: #ccc;
 }
 .container {
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
 }
+@media (max-width: 77.5rem) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
 .main {
-  padding: 0.625rem;
+  padding: 1.25rem 0;
   height: calc(100vh - 3.75rem);
 }
 
@@ -25,10 +31,15 @@ ul.slides {
   order: 1;
   margin-bottom: 20px;
 }
-.slide-titles {
+ul.slide-titles {
   order: 2;
+  width: 70%;
+  margin: 0 auto 0 0;
 }
 
+.slide-control {
+  visibility: hidden;
+}
 .slide-control,
 .radio-control {
   margin: 0;
@@ -36,6 +47,25 @@ ul.slides {
   height: 1.25rem;
   order: 3;
   cursor: pointer;
+}
+@media (max-width: 37.5rem) {
+  .carousel {
+    justify-content: center;
+  }
+  ul.slide-titles {
+    width: 70%;
+    flex: 0 0 100%;
+    margin-top: 20px;
+    order: 3;
+  }
+
+  .slide-control,
+  .radio-control {
+    order: 2;
+  }
+  .slide-control:first-child {
+    margin-left: 1.25rem;
+  }
 }
 
 .radio-control {
@@ -58,9 +88,6 @@ ul.slides {
   background-color: red;
 }
 
-.slide-control {
-  visibility: hidden;
-}
 .slide-control-1:hover ~ .radio-control-1,
 .slide-control-2:hover ~ .radio-control-2,
 .slide-control-3:hover ~ .radio-control-3,
@@ -106,11 +133,6 @@ ul.slides {
   max-height: 30rem;
 }
 
-ul.slide-titles {
-  width: 70%;
-  margin: 0 auto 0 0;
-}
-
 .slide,
 .slide-title {
   transition: all 0.2s ease-in;
@@ -135,10 +157,13 @@ ul.slide-titles {
   transform: translatex(-300%);
 }
 
+.footer-divider {
+  height: 0.15rem;
+  background-color: #ccc;
+}
 .footer-content {
   height: 3.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.15rem solid #ccc;
 }
