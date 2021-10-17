@@ -32,6 +32,8 @@ body {
 ul.slides {
   order: 1;
   margin-bottom: 1.25rem;
+  background-color: rgb(43, 55, 50);
+  border-radius: 15px;
 }
 
 ul.slide-titles {
@@ -120,6 +122,7 @@ ul.slide-titles {
 .slide-image {
   max-height: 31.25rem;
   margin: 0 auto;
+  height: 100%;
 }
 .slide,
 .slide-title,
