@@ -180,3 +180,11 @@ ul.slide-titles {
   justify-content: space-between;
   align-items: center;
 }
+
+.styled-links {
+  color: #fff;
+  text-decoration: none;
+}
+.styled-links:hover {
+  color: dodgerblue;
+}
