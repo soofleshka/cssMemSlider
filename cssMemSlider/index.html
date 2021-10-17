@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cssMemSlider</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="carousel">
+          <input
+            type="radio"
+            name="slide-control"
+            id="slide-control-1"
+            class="slide-control-1 slide-control"
+            checked
+          />
+          <label for="slide-control-1" class="radio-control-wrapper"
+            ><span class="radio-control radio-control-1"></span></label
+          ><input
+            type="radio"
+            name="slide-control"
+            id="slide-control-2"
+            class="slide-control-2 slide-control"
+          /><label for="slide-control-2" class="radio-control-wrapper"
+            ><span class="radio-control radio-control-2"></span></label
+          ><input
+            type="radio"
+            name="slide-control"
+            id="slide-control-3"
+            class="slide-control-3 slide-control"
+          /><label for="slide-control-3" class="radio-control-wrapper"
+            ><span class="radio-control radio-control-3"></span></label
+          ><input
+            type="radio"
+            name="slide-control"
+            id="slide-control-4"
+            class="slide-control-4 slide-control"
+          /><label for="slide-control-4" class="radio-control-wrapper"
+            ><span class="radio-control radio-control-4"></span
+          ></label>
+          <ul class="slide-titles">
+            <li class="slide-title slide-title-1">
+              <label for="slide-control-1"
+                >How CSS actually turns out to be</label
+              >
+            </li>
+            <li class="slide-title slide-title-2">
+              <label for="slide-control-2">HTML without CSS</label>
+            </li>
+            <li class="slide-title slide-title-3">
+              <label for="slide-control-3"
+                >What could be more important than important</label
+              >
+            </li>
+            <li class="slide-title slide-title-4">
+              <label for="slide-control-4">CSS is awesome</label>
+            </li>
+          </ul>
+          <ul class="slides">
+            <li class="slide slide1">
+              <img src="./assets/img/1.jpg" alt="slide 1" class="slide-image" />
+            </li>
+            <li class="slide slide2">
+              <img src="./assets/img/2.jpg" alt="slide 2" class="slide-image" />
+            </li>
+            <li class="slide slide3">
+              <img src="./assets/img/3.jpg" alt="slide 3" class="slide-image" />
+            </li>
+            <li class="slide slide4">
+              <img src="./assets/img/4.jpg" alt="slide 4" class="slide-image" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-divider"></div>
+      <div class="container">
+        <div class="footer-content">
+          <span>©&nbsp;2021</span>
+          <a href="https://rs.school/" class="styled-links" target="_blank"
+            >RSSchool</a
+          >
+          <a
+            href="https://github.com/soofleshka"
+            class="styled-links"
+            target="_blank"
+            >soofleshka</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
