@@ -17,7 +17,7 @@ body {
 
 .main {
   padding: 1.25rem 0;
-  height: calc(100vh - 3.75rem - 0.15rem);
+  min-height: calc(100vh - 3.75rem - 0.15rem);
 }
 
 .carousel {
@@ -64,12 +64,8 @@ ul.slide-titles {
     margin-top: 1.25rem;
     order: 3;
   }
-  .slide-control,
   .radio-control-wrapper {
     order: 2;
-  }
-  .slide-control:first-child {
-    margin-left: 1.25rem;
   }
 }
 
@@ -121,13 +117,15 @@ ul.slide-titles {
   flex: 0 0 auto;
 }
 
-.slide-image,
+.slide-image {
+  max-height: 31.25rem;
+  margin: 0 auto;
+}
 .slide,
 .slide-title,
 .slide-title label {
   width: 100%;
   max-width: none;
-  max-height: 30rem;
 }
 
 .slide,
